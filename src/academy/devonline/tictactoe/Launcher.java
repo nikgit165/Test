@@ -17,6 +17,8 @@
 
 package academy.devonline.tictactoe;
 
+import academy.devonline.tictactoe.component.*;
+
 /**
  * @autor devonline
  * @autor NikGit165
