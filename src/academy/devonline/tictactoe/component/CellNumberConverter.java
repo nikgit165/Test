@@ -15,26 +15,17 @@
  *
  */
 
-package academy.devonline.tictactoe;
+package academy.devonline.tictactoe.component;
 
-import academy.devonline.tictactoe.component.*;
-import academy.devonline.tictactoe.component.keypad.DesktopNumericKeypadCellNumberConverter;
+import academy.devonline.tictactoe.model.Cell;
 
 /**
  * @author devonline
  * @link http://devonline.academy/java
  */
-public final class Launcher {
+public interface CellNumberConverter {
 
-    public static void main(final String[] args) {
-        final CellNumberConverter cellNumberConverter = new DesktopNumericKeypadCellNumberConverter();
-        final Game game = new Game(
-                new DataPrinter(cellNumberConverter),
-                new ComputerMove(),
-                new UserMove(cellNumberConverter),
-                new WinnerVerifier(),
-                new CellVerifier()
-        );
-        game.play();
-    }
+    Cell toCell(char number);
+
+    char toNumber(Cell cell);
 }
