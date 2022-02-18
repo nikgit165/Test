@@ -1,4 +1,4 @@
-# The "tic-tac-toe" or my first project
+# The "tic-tac-toe" Java Script
 
 -----------------------------------------------------------------------------------
 
